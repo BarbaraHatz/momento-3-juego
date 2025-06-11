@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo Test Austum Chemical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de Bienvenida -->
+    <section id="welcome-screen" class="screen active">
+        <div class="logo-container">
+            <img src="imagenes/logo.jpg" alt="Austum Chemical Logo" class="logo">
+        </div>
+        <h1>Memo Test Austum</h1>
+        <p>Gracias por aguardar. Mientras fabricamos tu producto con la más alta calidad, te invitamos a jugar.</p>
+        <button id="start-game" class="btn">Comenzar</button>
+    </section>
+
+    <!-- Pantalla del Juego -->
+    <section id="game-screen" class="screen">
+        <div class="game-header">
+            <img src="imagenes/logo.jpg" alt="Austum Chemical Logo" class="game-logo">
+            <h2>Memo Test</h2>
+            <div class="attempts">Intentos: <span id="attempts-count">0</span></div>
+        </div>
+        <div id="game-board" class="game-board"></div>
+    </section>
+
+    <!-- Pantalla de Resultados -->
+    <section id="results-screen" class="screen">
+        <div class="results-content">
+            <img src="imagenes/logo.jpg" alt="Austum Chemical Logo" class="results-logo">
+            <h2>¡Felicitaciones!</h2>
+            <p class="celebration-text">¡Has completado el Memo Test con éxito!</p>
+            <p>Total de intentos: <span id="final-attempts">0</span></p>
+            <p class="thank-you">¡Gracias por jugar y confiar en Austum Chemical!</p>
+            <button id="play-again" class="btn">Jugar de nuevo</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html> 
